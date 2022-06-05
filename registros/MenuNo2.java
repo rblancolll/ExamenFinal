@@ -29,7 +29,13 @@ case 1 -> {
            System.out.println("➤➤➤➤➤➤➤➤➤➤➤");
            System.out.println("Ingrese el nombre del departamento");
            String Nombredeldepartamento=leer.next();
-           registro.registrarNombredeldepartamento(Nombredeldepartamento+" "+"Posicion No1");
+           System.out.println("Ingrese la cantidad de municipios que tiene");
+           String Cantidaddemunicipios=leer.next();
+           System.out.println("Ingrese su cabecera");
+           String Cabecera=leer.next();
+           registro.registrarNombredeldepartamento(Nombredeldepartamento+" "+"Posicion 1");
+           registro.registrarCantidaddemunicipios(Cantidaddemunicipios);
+           registro.registrarCabecera(Cabecera);
           
 }
 
@@ -37,14 +43,26 @@ case 2 -> {
            System.out.println("➤➤➤➤➤➤➤➤➤➤➤");
            System.out.println("Ingrese el nombre del departamento");
            String Nombredeldepartamento2=leer.next();
-           registro.registrarNombredeldepartamento2(Nombredeldepartamento2+" "+"Posicion No2");
+           System.out.println("Ingrese la cantidad de municipios que tiene");
+           String Cantidaddemunicipios=leer.next();
+           System.out.println("Ingrese su cabecera");
+           String Cabecera=leer.next();
+           registro.registrarNombredeldepartamento2(Nombredeldepartamento2+" "+"Posicion 2");
+           registro.registrarCantidaddemunicipios(Cantidaddemunicipios);
+           registro.registrarCabecera(Cabecera);
 }
 
 case 3 -> { 
            System.out.println("➤➤➤➤➤➤➤➤➤➤➤");
            System.out.println("Ingrese el nombre del departamento");
            String Nombredeldepartamento=leer.next();
-           registro.registrarNombredeldepartamento(Nombredeldepartamento+" "+"Posicion No3");
+           System.out.println("Ingrese la cantidad de municipios que tiene");
+           String Cantidaddemunicipios=leer.next();
+           System.out.println("Ingrese su cabecera");
+           String Cabecera=leer.next();
+           registro.registrarNombredeldepartamento(Nombredeldepartamento+" "+"Posicion 3");
+           registro.registrarCantidaddemunicipios(Cantidaddemunicipios);
+           registro.registrarCabecera(Cabecera);
            
 }
 
@@ -52,14 +70,26 @@ case 4 -> {
            System.out.println("➤➤➤➤➤➤➤➤➤➤➤");
            System.out.println("Ingrese el nombre del departamento");
            String Nombredeldepartamento4=leer.next();
-           registro.registrarNombredeldepartamento4(Nombredeldepartamento4+" "+"Posicion No4");
+           System.out.println("Ingrese la cantidad de municipios que tiene");
+           String Cantidaddemunicipios=leer.next();
+           System.out.println("Ingrese su cabecera");
+           String Cabecera=leer.next();
+           registro.registrarNombredeldepartamento4(Nombredeldepartamento4+" "+"Posicion 4");
+           registro.registrarCantidaddemunicipios(Cantidaddemunicipios);
+           registro.registrarCabecera(Cabecera);
 }
 
 case 5 -> { 
            System.out.println("➤➤➤➤➤➤➤➤➤➤➤");
            System.out.println("Ingrese el nombre del departamento");
            String Nombredeldepartamento=leer.next();
-           registro.registrarNombredeldepartamento(Nombredeldepartamento+" "+"Posicion No5");
+           System.out.println("Ingrese la cantidad de municipios que tiene");
+           String Cantidaddemunicipios=leer.next();
+           System.out.println("Ingrese su cabecera");
+           String Cabecera=leer.next();
+           registro.registrarNombredeldepartamento(Nombredeldepartamento+" "+"Posicion 5");
+           registro.registrarCantidaddemunicipios(Cantidaddemunicipios);
+           registro.registrarCabecera(Cabecera);
            
 }
 
@@ -67,8 +97,13 @@ case 6-> {
            System.out.println("➤➤➤➤➤➤➤➤➤➤➤");
            System.out.println("Ingrese el nombre del departamento");
            String Nombredeldepartamento6=leer.next();
-           
-           registro.registrarNombredeldepartamento6(Nombredeldepartamento6+" "+"Posicion No6");
+           System.out.println("Ingrese la cantidad de municipios que tiene");
+           String Cantidaddemunicipios=leer.next();
+           System.out.println("Ingrese su cabecera");
+           String Cabecera=leer.next();
+           registro.registrarNombredeldepartamento6(Nombredeldepartamento6+" "+"Posicion 6");
+           registro.registrarCantidaddemunicipios(Cantidaddemunicipios);
+           registro.registrarCabecera(Cabecera);
            
 }
 case 7 -> {
@@ -79,7 +114,8 @@ case 7 -> {
            registro.mostrarNombredeldepartamento2();
            registro.mostrarNombredeldepartamento4();
            registro.mostrarNombredeldepartamento6();
-           
+           registro.mostrarCantidaddemunicipios();
+           registro.mostrarCabecera();
                }
    
 

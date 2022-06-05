@@ -8,6 +8,8 @@ public class ArrayDepartamentos extends ArrayCantidad{
     private String [] Nombredeldepartamento2;
     private String [] Nombredeldepartamento4;
     private String [] Nombredeldepartamento6;
+    private String [] Cantidaddemunicipios;
+    private String [] Cabecera;
 
 public ArrayDepartamentos()
  {
@@ -15,7 +17,9 @@ public ArrayDepartamentos()
     Nombredeldepartamento2 =new String[100];
     Nombredeldepartamento4 =new String[100];
     Nombredeldepartamento6 =new String[100];
+    Cantidaddemunicipios =new String[100];
     vectorTransacciones= new String[100];
+    Cabecera =new String[100];
     this.indiceVector=0;
      
 
@@ -58,6 +62,27 @@ public void registrarNombredeldepartamento(String tipo ){
     }
  public void Nombredeldepartamento6(String Nombredeldepartamento6){
       this.Nombredeldepartamento6(Nombredeldepartamento6);
+      
+      }
+  
+ public void registrarCantidaddemunicipios(String tipo ){
+        indiceVector= indiceVector+1;
+               Cantidaddemunicipios[indiceVector]= " Municipio = ┃"+ tipo +"┃ ";
+       
+    }
+ 
+ public void Cantidaddemunicipios(String Cantidaddemunicipios){
+      this.registrarCantidaddemunicipios(Cantidaddemunicipios);
+      
+      }
+ 
+ public void registrarCabecera(String tipo ){
+        indiceVector= indiceVector+1;
+               Cabecera[indiceVector]= " Cabecera = ┃"+ tipo +"┃ ";
+        
+    }
+ public void Cabecera(String Cabecera){
+      this.Cabecera(Cabecera);
       
       }
  
@@ -129,4 +154,39 @@ public void registrarNombredeldepartamento(String tipo ){
             } 
         }
   
+   public void mostrarCantidaddemunicipios(){
+      
+            for (int i=1; i<Cantidaddemunicipios.length;i++){
+                if(Cantidaddemunicipios[i] != null){
+               
+                    System.out.println(Cantidaddemunicipios[i]);
+                   
+                }
+            }
+            System.out.println("");
+            for(String transaccion : Cantidaddemunicipios){
+                if(transaccion != null){
+                   
+                }   
+            } 
+        }
+   
+   public void mostrarCabecera(){
+      
+            for (int i=1; i<Cabecera.length;i++){
+                if(Cabecera[i] != null){
+               
+                    System.out.println(Cabecera[i]);
+                   
+                }
+            }
+            System.out.println("");
+            for(String transaccion : Cabecera){
+                if(transaccion != null){
+                   
+                }   
+            } 
+        }
+
+   
 }

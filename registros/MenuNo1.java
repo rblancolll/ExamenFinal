@@ -28,7 +28,8 @@ public class MenuNo1 {
         switch(op){
             case 1: agregar ();break;
             case 2: listar ();break;
-            case 3: salir(); break;
+            case 3: buscar ( ); break;
+            case 4: salir(); break;
             default: errorOpcion(); break;
         }
             
@@ -76,7 +77,30 @@ public class MenuNo1 {
         menu ();
     }//Se cierra listar
     
-    
+     private void buscar (){
+        if(lista.isEmpty()){
+            System.out.println("No hay Datos para buscar");
+        }else{
+            System.out.println("Digite el departamento que quiere buscar");
+            cod = leer.next();
+            res = false;
+            for (int i = 0; i < lista.size(); i++){
+                f = lista.get(i);
+               if(cod == null ? f.getDepartamento() == null : cod.equals(f.getDepartamento())){
+                res = true;
+                System.out.println("Departamento encontrado");
+                System.out.println("Departamento : " + f.getDepartamento());
+               
+                break;
+               }
+            }
+            if(res == false){
+                System.out.println("Departamento " + cod + " No encontrado"); 
+            }
+        }
+        menu ();
+        
+    }//Se cierra buscar
     
     private void salir(){
         System.out.println("Adios");

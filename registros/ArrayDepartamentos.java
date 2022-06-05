@@ -9,6 +9,11 @@ public class ArrayDepartamentos extends ArrayCantidad{
     private String [] Nombredeldepartamento4;
     private String [] Nombredeldepartamento6;
     private String [] Cantidaddemunicipios;
+    private String [] Cantidaddemunicipios1;
+    private String [] Cantidaddemunicipios2;
+    private String [] Cantidaddemunicipios3;
+    private String [] Cantidaddemunicipios4;
+    private String [] Cantidaddemunicipios5;
     private String [] Cabecera;
 
 public ArrayDepartamentos()
@@ -18,8 +23,13 @@ public ArrayDepartamentos()
     Nombredeldepartamento4 =new String[100];
     Nombredeldepartamento6 =new String[100];
     Cantidaddemunicipios =new String[100];
-    vectorTransacciones= new String[100];
+    Cantidaddemunicipios1 =new String[100];
+    Cantidaddemunicipios2 =new String[100];
+    Cantidaddemunicipios3 =new String[100];
+    Cantidaddemunicipios4 =new String[100];
+    Cantidaddemunicipios5 =new String[100];
     Cabecera =new String[100];
+    vectorTransacciones= new String[100];
     this.indiceVector=0;
      
 
@@ -75,6 +85,63 @@ public void registrarNombredeldepartamento(String tipo ){
       this.registrarCantidaddemunicipios(Cantidaddemunicipios);
       
       }
+ 
+ public void registrarCantidaddemunicipios1(String tipo ){
+        indiceVector= indiceVector+1;
+               Cantidaddemunicipios1[indiceVector]= " Municipio = ┃"+ tipo +"┃ ";
+       
+    }
+ 
+ public void Cantidaddemunicipios1(String Cantidaddemunicipios1){
+      this.registrarCantidaddemunicipios1(Cantidaddemunicipios1);
+      
+      }
+ 
+  public void registrarCantidaddemunicipios2(String tipo ){
+        indiceVector= indiceVector+1;
+               Cantidaddemunicipios2[indiceVector]= " Municipio = ┃"+ tipo +"┃ ";
+       
+    }
+ 
+ public void Cantidaddemunicipios2(String Cantidaddemunicipios2){
+      this.registrarCantidaddemunicipios2(Cantidaddemunicipios2);
+      
+      }
+ 
+ public void registrarCantidaddemunicipios3(String tipo ){
+        indiceVector= indiceVector+1;
+               Cantidaddemunicipios3[indiceVector]= " Municipio = ┃"+ tipo +"┃ ";
+       
+    }
+ 
+ public void Cantidaddemunicipios3(String Cantidaddemunicipios3){
+      this.registrarCantidaddemunicipios3(Cantidaddemunicipios3);
+      
+      }
+ 
+  public void registrarCantidaddemunicipios4(String tipo ){
+        indiceVector= indiceVector+1;
+               Cantidaddemunicipios4[indiceVector]= " Municipio = ┃"+ tipo +"┃ ";
+       
+    }
+ 
+ public void Cantidaddemunicipios4(String Cantidaddemunicipios4){
+      this.registrarCantidaddemunicipios4(Cantidaddemunicipios4);
+      
+      }
+ 
+ public void registrarCantidaddemunicipios5(String tipo ){
+        indiceVector= indiceVector+1;
+               Cantidaddemunicipios5[indiceVector]= " Municipio = ┃"+ tipo +"┃ ";
+       
+    }
+ 
+ public void Cantidaddemunicipios5(String Cantidaddemunicipios5){
+      this.registrarCantidaddemunicipios5(Cantidaddemunicipios5);
+      
+      }
+ 
+ 
  
  public void registrarCabecera(String tipo ){
         indiceVector= indiceVector+1;
@@ -171,6 +238,91 @@ public void registrarNombredeldepartamento(String tipo ){
             } 
         }
    
+   public void mostrarCantidaddemunicipios1(){
+      
+            for (int i=1; i<Cantidaddemunicipios1.length;i++){
+                if(Cantidaddemunicipios1[i] != null){
+               
+                    System.out.println(Cantidaddemunicipios1[i]);
+                   
+                }
+            }
+            System.out.println("");
+            for(String transaccion : Cantidaddemunicipios1){
+                if(transaccion != null){
+                   
+                }   
+            } 
+        }
+
+public void mostrarCantidaddemunicipios2(){
+      
+            for (int i=1; i<Cantidaddemunicipios2.length;i++){
+                if(Cantidaddemunicipios2[i] != null){
+               
+                    System.out.println(Cantidaddemunicipios2[i]);
+                   
+                }
+            }
+            System.out.println("");
+            for(String transaccion : Cantidaddemunicipios2){
+                if(transaccion != null){
+                   
+                }   
+            } 
+        }
+
+public void mostrarCantidaddemunicipios3(){
+      
+            for (int i=1; i<Cantidaddemunicipios3.length;i++){
+                if(Cantidaddemunicipios3[i] != null){
+               
+                    System.out.println(Cantidaddemunicipios3[i]);
+                   
+                }
+            }
+            System.out.println("");
+            for(String transaccion : Cantidaddemunicipios3){
+                if(transaccion != null){
+                   
+                }   
+            } 
+        }
+
+public void mostrarCantidaddemunicipios4(){
+      
+            for (int i=1; i<Cantidaddemunicipios4.length;i++){
+                if(Cantidaddemunicipios4[i] != null){
+               
+                    System.out.println(Cantidaddemunicipios4[i]);
+                   
+                }
+            }
+            System.out.println("");
+            for(String transaccion : Cantidaddemunicipios4){
+                if(transaccion != null){
+                   
+                }   
+            } 
+        }
+
+public void mostrarCantidaddemunicipios5(){
+      
+            for (int i=1; i<Cantidaddemunicipios5.length;i++){
+                if(Cantidaddemunicipios5[i] != null){
+               
+                    System.out.println(Cantidaddemunicipios5[i]);
+                   
+                }
+            }
+            System.out.println("");
+            for(String transaccion : Cantidaddemunicipios5){
+                if(transaccion != null){
+                   
+                }   
+            } 
+        }
+
    public void mostrarCabecera(){
       
             for (int i=1; i<Cabecera.length;i++){

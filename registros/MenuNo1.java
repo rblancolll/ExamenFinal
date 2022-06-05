@@ -28,8 +28,9 @@ public class MenuNo1 {
         switch(op){
             case 1: agregar ();break;
             case 2: listar ();break;
-            case 3: buscar ( ); break;
-            case 4: salir(); break;
+            case 3: buscar (); break;
+            case 4: eliminar (); break;
+            case 5: salir(); break;
             default: errorOpcion(); break;
         }
             
@@ -102,6 +103,30 @@ public class MenuNo1 {
         
     }//Se cierra buscar
     
+      private void eliminar (){
+        if(lista.isEmpty()){
+            System.out.println("No hay Datos para eliminar");
+        }else{
+            System.out.println("Digite el departamento que quiere eliminar");
+            cod = leer.next();
+            res = false;
+            for (int i = 0; i < lista.size(); i++){
+                f = lista.get(i);
+               if(cod == null ? f.getDepartamento() == null : cod.equals(f.getDepartamento())){
+                res = true;
+                lista.remove(i);
+                System.out.println("Se elimino el departamento correctamente");
+                break;
+               }
+            }
+            if(res == false){
+                System.out.println("Departamento " + cod + " No encontrado. Imposible eliminar"); 
+            }
+        }
+        menu ();
+        
+    }//Se cierra eliminar
+      
     private void salir(){
         System.out.println("Adios");
         System.exit(0);
